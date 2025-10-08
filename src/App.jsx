@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import AllApps from "./pages/AllApps";
+import AppDetails from "./pages/AppDetails";
 
 
 
@@ -20,7 +21,9 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/all-apps" element={<AllApps />} />
+            <Route path="/apps/:id" element={<AppDetails />} />
             <Route path="/installation" element={<Installation />} />
+            
           </Routes>
         </main>
         <Footer />

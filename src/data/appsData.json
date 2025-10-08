@@ -1,10 +1,11 @@
 [
+  
   {
     "id": 1,
     "image": "https://cdn-icons-png.flaticon.com/512/3039/3039385.png",
-    "title": "Hero Notes",
+    "title": "Hero Notes Lite",
     "companyName": "Hero Labs",
-    "description": "A simple note-taking app with cloud sync and offline support.",
+    "description": "Hero Notes Lite is a user-friendly note-taking application designed to help users capture thoughts, ideas, and daily tasks effortlessly. With seamless cloud synchronization, notes remain safe and accessible across devices, even offline. Organize notes with tags, folders, and customizable categories, making it easy to find what you need. The intuitive interface ensures beginners and advanced users can navigate efficiently. Additional features like reminders, search functionality, and text formatting enhance productivity. Hero Notes Lite simplifies note management while keeping your data secure, organized, and readily available whenever inspiration strikes.",
     "size": 45,
     "reviews": 120,
     "ratingAvg": 4.5,
@@ -13,9 +14,9 @@
   {
     "id": 2,
     "image": "https://cdn-icons-png.flaticon.com/512/2964/2964514.png",
-    "title": "Hero Fitness",
+    "title": "Hero Fitness Pro",
     "companyName": "Hero Labs",
-    "description": "Track your workouts and monitor your progress easily.",
+    "description": "Hero Fitness Pro is a comprehensive fitness tracking app designed to help users achieve health and wellness goals efficiently. Log workouts, monitor progress, and set personalized exercise routines with detailed analytics and progress charts. Track improvements over time, stay motivated, and adjust fitness plans as needed. Includes goal setting, reminders, and tips for a balanced lifestyle. Supports multiple workout types, including cardio, strength training, and flexibility exercises. Its user-friendly interface allows beginners and advanced users alike to engage effectively, making fitness tracking enjoyable, interactive, and highly effective for daily progress and long-term results.",
     "size": 60,
     "reviews": 200,
     "ratingAvg": 4.7,
@@ -24,9 +25,9 @@
   {
     "id": 3,
     "image": "https://cdn-icons-png.flaticon.com/512/3075/3075977.png",
-    "title": "Hero Recipes",
+    "title": "Hero Recipe Master",
     "companyName": "Hero Foods",
-    "description": "Discover new recipes and manage your meal plans.",
+    "description": "Hero Recipe Master is your ultimate culinary companion designed to inspire creativity and simplify meal planning. The app offers an extensive collection of recipes, from quick and easy meals to gourmet dishes from around the world. Search recipes based on ingredients, dietary preferences, or cuisine type for efficient, personalized planning. Additional features include shopping list creation, step-by-step cooking instructions, and saving favorite recipes for later. Hero Recipe Master empowers users to explore new flavors, improve cooking skills, and enjoy organized meal planning. Its intuitive design makes cooking enjoyable, easy, and stress-free for everyone.",
     "size": 30,
     "reviews": 90,
     "ratingAvg": 4.3,
@@ -35,9 +36,9 @@
   {
     "id": 4,
     "image": "https://cdn-icons-png.flaticon.com/512/1163/1163624.png",
-    "title": "Hero Weather",
+    "title": "Hero Weather Now",
     "companyName": "Hero Tech",
-    "description": "Real-time weather updates with interactive maps.",
+    "description": "Hero Weather Now provides accurate, real-time weather updates to help users plan their day effectively. Interactive maps display temperature, precipitation, and wind patterns globally, while hourly and weekly forecasts give detailed insights. Alerts for severe weather conditions ensure safety and preparedness. The app supports multiple locations, enabling users to track weather anywhere in the world. Its intuitive design allows quick access to essential weather information. Hero Weather Now combines accuracy, convenience, and usability to make weather monitoring simple and reliable. Users can make informed decisions for travel, outdoor activities, and daily planning effortlessly.",
     "size": 25,
     "reviews": 150,
     "ratingAvg": 4.6,
@@ -46,9 +47,9 @@
   {
     "id": 5,
     "image": "https://cdn-icons-png.flaticon.com/512/854/854894.png",
-    "title": "Hero Travel",
+    "title": "Hero Travel Guide",
     "companyName": "Hero Labs",
-    "description": "Plan your trips and explore new destinations worldwide.",
+    "description": "Hero Travel Guide is designed to make trip planning simple, organized, and enjoyable. Discover new destinations worldwide, plan itineraries, and track travel progress. The app offers detailed travel guides, maps, and recommendations for attractions, accommodations, and local dining. Users can create personalized travel plans, save favorite locations, and share experiences with friends and family. Offline access ensures essential travel information is always available. Hero Travel Guide helps users explore safely, efficiently, and confidently, providing all necessary tools for a seamless travel experience. Its easy-to-use interface and comprehensive features make every trip memorable and stress-free.",
     "size": 55,
     "reviews": 180,
     "ratingAvg": 4.8,
@@ -57,9 +58,9 @@
   {
     "id": 6,
     "image": "https://cdn-icons-png.flaticon.com/512/727/727245.png",
-    "title": "Hero Music",
+    "title": "Hero Music Stream",
     "companyName": "Hero Sounds",
-    "description": "Stream your favorite music and create playlists.",
+    "description": "Hero Music Stream allows users to enjoy their favorite music anytime, anywhere. Stream tracks, create playlists, and discover new artists effortlessly. Personalized recommendations ensure users find music tailored to their taste. The app supports offline listening, so music is always accessible, even without an internet connection. High-quality audio, smart playlists, and easy-to-use navigation provide an immersive experience. Hero Music Stream encourages exploration of different genres, moods, and artists while maintaining seamless playback. Users can organize their favorite songs efficiently, making listening enjoyable and convenient. Its intuitive interface makes music discovery and streaming engaging for everyone.",
     "size": 40,
     "reviews": 220,
     "ratingAvg": 4.4,
@@ -68,9 +69,9 @@
   {
     "id": 7,
     "image": "https://cdn-icons-png.flaticon.com/512/2331/2331948.png",
-    "title": "Hero Finance",
+    "title": "Hero Finance Manager",
     "companyName": "Hero Finance",
-    "description": "Manage your personal finances and budget easily.",
+    "description": "Hero Finance Manager is a powerful personal finance tool designed to help users manage budgets, track expenses, and plan for the future. The app offers easy expense tracking, financial goal setting, and income management. Visual charts and reports provide insights into spending habits, helping users make informed financial decisions. Features include bill reminders, automated categorization of expenses, and secure data storage. Hero Finance Manager supports multiple accounts, ensuring comprehensive tracking of financial activities. Its intuitive interface simplifies complex finance management, empowering users to improve money habits, save effectively, and achieve long-term financial stability confidently.",
     "size": 35,
     "reviews": 130,
     "ratingAvg": 4.2,
@@ -79,9 +80,9 @@
   {
     "id": 8,
     "image": "https://cdn-icons-png.flaticon.com/512/733/733585.png",
-    "title": "Hero Chat",
+    "title": "Hero Chat Secure",
     "companyName": "Hero Labs",
-    "description": "Secure messaging app with group chat support.",
+    "description": "Hero Chat Secure is a messaging app that emphasizes privacy and convenience for individuals and groups. With end-to-end encryption, messages remain secure and confidential. The app supports group chats, multimedia sharing, voice messages, and video calls, providing a complete communication solution. Customizable notifications, themes, and chat management enhance user experience. Hero Chat Secure also includes features like message search, pinned chats, and cloud backup to ensure important conversations are preserved. Its user-friendly interface makes connecting with friends, family, and colleagues seamless and efficient. Enjoy safe, fast, and reliable communication without compromising security.",
     "size": 50,
     "reviews": 300,
     "ratingAvg": 4.7,
@@ -90,9 +91,9 @@
   {
     "id": 9,
     "image": "https://cdn-icons-png.flaticon.com/512/2950/2950706.png",
-    "title": "Hero Notes Pro",
+    "title": "Hero Notes Pro Plus",
     "companyName": "Hero Labs",
-    "description": "Advanced note-taking with AI suggestions and tags.",
+    "description": "Hero Notes Pro Plus is an advanced note-taking application designed for productivity enthusiasts and professionals. The app integrates AI-powered suggestions, smart tagging, and enhanced organization features to make note management seamless. Users can create notes, attach files, set reminders, and collaborate with others effortlessly. Advanced search capabilities ensure quick access to important information. Cloud synchronization guarantees that notes are accessible across devices at any time, even offline. Hero Notes Pro Plus combines intuitive design with powerful features, empowering users to capture, organize, and retrieve information efficiently. It is the ultimate tool for anyone looking to maximize productivity and creativity.",
     "size": 48,
     "reviews": 95,
     "ratingAvg": 4.5,
@@ -101,14 +102,16 @@
   {
     "id": 10,
     "image": "https://cdn-icons-png.flaticon.com/512/854/854878.png",
-    "title": "Hero Maps",
+    "title": "Hero Maps Live",
     "companyName": "Hero Tech",
-    "description": "Interactive maps with live traffic updates.",
+    "description": "Hero Maps Live provides interactive, real-time maps to help users navigate efficiently and safely. With live traffic updates, route planning, and turn-by-turn navigation, the app ensures smooth travel experiences. Users can search for locations, discover points of interest, and customize routes according to preferences. Additional features include offline maps, public transportation information, and street view navigation. Hero Maps Live is designed for accuracy, convenience, and ease of use, allowing travelers, commuters, and explorers to move confidently. Its intuitive interface and comprehensive map data make navigation faster, simpler, and more enjoyable, ensuring users reach destinations without hassle.",
     "size": 65,
     "reviews": 110,
     "ratingAvg": 4.6,
     "downloads": 6800
-  },
+  }
+,
+
   {
     "id": 11,
     "image": "https://cdn-icons-png.flaticon.com/512/3209/3209265.png",

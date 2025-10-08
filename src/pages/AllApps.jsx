@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import { FaSearch } from "react-icons/fa";
+import { useNavigate } from "react-router-dom"; // ✅ Import useNavigate
 import appsData from "../data/appsData";
 
 export default function AllApps() {
   const [searchTerm, setSearchTerm] = useState("");
+  const navigate = useNavigate(); // ✅ Initialize navigate
 
   // Filter apps based on search term (case-insensitive)
   const filteredApps = appsData.filter((app) =>
@@ -49,6 +51,7 @@ export default function AllApps() {
             <div
               key={app.id}
               className="bg-white rounded-lg shadow p-4 cursor-pointer hover:shadow-lg transition"
+              onClick={() => navigate(`/apps/${app.id}`)} // ✅ Navigate to AppDetails page
             >
               <img
                 src={app.image}
@@ -57,7 +60,17 @@ export default function AllApps() {
               />
               <h3 className="font-semibold text-lg mb-1 text-center">{app.title}</h3>
               <div className="flex justify-between text-sm text-gray-500 mt-2">
-                <span>Downloads: {app.downloads.toLocaleString()}</span>
+                <div className="flex items-center gap-2 text-green-600">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+                className="w-4 h-4"
+              >
+                <path d="M.5 9.9l6.364 6.364a.5.5 0 00.707 0L13.936 9.9a.5.5 0 00-.707-.707L8.5 13.922V.5a.5.5 0 00-1 0v13.422L1.207 9.193a.5.5 0 00-.707.707z" />
+              </svg>
+              <span>{app.downloads.toLocaleString()}</span>
+            </div>
                 <span>⭐ {app.ratingAvg.toFixed(1)}</span>
               </div>
             </div>

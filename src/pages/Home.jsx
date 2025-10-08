@@ -99,7 +99,13 @@ export default function Home() {
       {/* ===== Top Apps Section ===== */}
 <section className="w-full py-16 bg-gray-50">
   <div className="max-w-7xl mx-auto px-6 text-center">
-    <h2 className="text-3xl font-bold mb-10">Top Apps</h2>
+    <div className="text-center mb-6">
+  <h2 className="text-3xl font-bold mb-4">Top Apps</h2>
+  <p className="text-[#627382] text-sm max-w-2xl mx-auto leading-relaxed">
+   Explore All Top Apps on the Market developed by us.
+  </p>
+</div>
+
 
     {/* Apps Grid */}
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
