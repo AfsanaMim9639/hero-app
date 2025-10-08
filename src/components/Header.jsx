@@ -13,7 +13,7 @@ export default function Header() {
   const links = [
     { name: "Home", path: "/" },
     { name: "Apps", path: "/all-apps" },
-    { name: "Installation", path: "/installation" },
+    { name: "Installation", path: "/my-installation" },
   ];
 
   return (
