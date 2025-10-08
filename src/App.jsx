@@ -2,10 +2,8 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Home from "./pages/Home";
 
-function Home() {
-  return <div className="p-6">Home Page</div>;
-}
 
 function Apps() {
   return <div className="p-6">Apps Page</div>;
