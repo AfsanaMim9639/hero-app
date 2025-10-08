@@ -2,6 +2,7 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import Logo from "../assets/logo.png";
 
+
 // Font Awesome Imports
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -11,7 +12,7 @@ export default function Header() {
 
   const links = [
     { name: "Home", path: "/" },
-    { name: "Apps", path: "/apps" },
+    { name: "Apps", path: "/all-apps" },
     { name: "Installation", path: "/installation" },
   ];
 

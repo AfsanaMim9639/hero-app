@@ -4,7 +4,8 @@ import { FaApple } from "react-icons/fa";
 import BannerImage from "../assets/hero.png";
 import appsData from "../data/appsData"; // apps JSON
 import { useNavigate } from "react-router-dom";
-
+import GooglePlayLogo from "../assets/play-store.png";
+//D:\Phero\B12A008\hero-app\src\assets\play-store.png
 export default function Home() {
   const navigate = useNavigate();
 
@@ -23,27 +24,37 @@ export default function Home() {
 </h1>
 
 <p className="text-[#627382] text-sm max-w-2xl text-justify mt-3 mb-6 leading-relaxed">
-  At HERO.IO, we craft innovative apps designed to make everyday life simpler, smarter, and more exciting.
+  At <b>HERO.IO</b>, we craft innovative apps designed to make everyday life simpler, smarter, and more exciting.
   <br />
   Our goal is to turn your ideas into digital experiences that truly make an impact.
 </p>
 
 <div className="flex flex-col sm:flex-row gap-4 justify-center">
+  {/* Google Play Button */}
   <a
     href="https://play.google.com/store"
     target="_blank"
-    className="flex items-center justify-center gap-2 bg-[#D2D2D2] text-gray-900 px-6 py-3 rounded border border-gray-400 font-semibold hover:bg-gray-300 transition"
+    className="flex items-center justify-center gap-2 bg-[#D2D2D2] px-6 py-3 rounded border border-gray-400 font-semibold hover:bg-gray-300 transition"
   >
-    <SiGoogleplay size={24} color="#34A853" /> {/* Google Play green */}
+    <img
+    src={GooglePlayLogo}
+    alt="Google Play"
+    className="h-8 w-auto"
+  />
     <span className="text-gray-900">Play Store</span>
   </a>
 
+  {/* App Store Button */}
   <a
     href="https://www.apple.com/app-store/"
     target="_blank"
-    className="flex items-center justify-center gap-2 bg-[#D2D2D2] text-gray-900 px-6 py-3 rounded border border-gray-400 font-semibold hover:bg-gray-300 transition"
+    className="flex items-center justify-center gap-2 bg-[#D2D2D2] px-6 py-3 rounded border border-gray-400 font-semibold hover:bg-gray-300 transition"
   >
-    <FaApple size={24} color="#000000" /> {/* Apple logo black */}
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/6/67/App_Store_%28iOS%29.svg"
+      alt="App Store"
+      className="h-6 w-auto"
+    />
     <span className="text-gray-900">App Store</span>
   </a>
 </div>

@@ -3,11 +3,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
+import AllApps from "./pages/AllApps";
 
 
-function Apps() {
-  return <div className="p-6">Apps Page</div>;
-}
 
 function Installation() {
   return <div className="p-6">Installation Page</div>;
@@ -21,7 +19,7 @@ function App() {
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/apps" element={<Apps />} />
+            <Route path="/all-apps" element={<AllApps />} />
             <Route path="/installation" element={<Installation />} />
           </Routes>
         </main>
