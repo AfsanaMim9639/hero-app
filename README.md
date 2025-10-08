@@ -32,6 +32,7 @@ The app is fully responsive and provides a smooth user experience across desktop
 
 ## Project Structure
 
+```
 hero-apps-dashboard/
 ├── public/
 │ └── index.html
@@ -44,3 +45,5 @@ hero-apps-dashboard/
 │ └── main.jsx
 ├── package.json
 └── README.md
+
+```
