@@ -63,28 +63,28 @@ export default function Home() {
       </section>
 
       {/* ===== Stats Section ===== */}
-   <section className="w-full bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white font-sans">
+ <section className="w-full bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white font-sans">
   <div className="px-6 text-center py-16">
     <h2 className="text-3xl font-bold mb-12">Trusted by Millions, Built for You</h2>
 
-    <div className="flex flex-col sm:flex-row items-center justify-between gap-8 max-w-6xl mx-auto">
+    <div className="flex flex-wrap sm:flex-nowrap items-stretch justify-between gap-6 max-w-6xl mx-auto">
 
       {/* Total Downloads */}
-      <div className="flex-1 flex flex-col items-center p-6 rounded-lg bg-[#4AC29A] transform transition duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer">
+      <div className="flex-1 flex flex-col items-center p-6 rounded-lg bg-[#4AC29A] transform transition duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer min-w-[200px]">
         <h2 className="text-lg font-semibold">Total Downloads</h2>
         <p className="text-4xl font-extrabold my-2">29.6M</p>
         <p className="text-sm opacity-80">21% more than last month</p>
       </div>
 
       {/* Total Reviews */}
-      <div className="flex-1 flex flex-col items-center p-6 rounded-lg bg-[#5B9CF3] transform transition duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer">
+      <div className="flex-1 flex flex-col items-center p-6 rounded-lg bg-[#5B9CF3] transform transition duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer min-w-[200px]">
         <h2 className="text-lg font-semibold">Total Reviews</h2>
         <p className="text-4xl font-extrabold my-2">906K</p>
         <p className="text-sm opacity-80">46% more than last month</p>
       </div>
 
       {/* Active Apps */}
-      <div className="flex-1 flex flex-col items-center p-6 rounded-lg bg-[#F39C5B] transform transition duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer">
+      <div className="flex-1 flex flex-col items-center p-6 rounded-lg bg-[#F39C5B] transform transition duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer min-w-[200px]">
         <h2 className="text-lg font-semibold">Active Apps</h2>
         <p className="text-4xl font-extrabold my-2">132+</p>
         <p className="text-sm opacity-80">31 more will Launch</p>
@@ -93,6 +93,7 @@ export default function Home() {
     </div>
   </div>
 </section>
+
 
 
 
