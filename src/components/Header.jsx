@@ -56,7 +56,7 @@ export default function Header() {
 
   {/* Contribute Button */}
   <a
-    href="https://github.com/your-github-username"
+    href="https://github.com/AfsanaMim9639"
     target="_blank"
     rel="noopener noreferrer"
     className="hidden md:inline-flex items-center gap-2 px-4 py-2 rounded-lg text-white font-semibold hover:opacity-90 transition"
