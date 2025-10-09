@@ -2,6 +2,15 @@ import React, { useState } from "react";
 import { FaSearch } from "react-icons/fa";
 import { useNavigate } from "react-router-dom"; 
 import appsData from "../data/appsData";
+import appNotFound from "../assets/App-Error.png";
+
+// Number formatting function
+function formatNumber(num) {
+  if (num >= 1000000000) return (num / 1000000000).toFixed(1).replace(/\.0$/, "") + "B";
+  if (num >= 1000000) return (num / 1000000).toFixed(1).replace(/\.0$/, "") + "M";
+  if (num >= 1000) return (num / 1000).toFixed(1).replace(/\.0$/, "") + "K";
+  return num.toString();
+}
 
 export default function AllApps() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -69,7 +78,7 @@ export default function AllApps() {
               >
                 <path d="M.5 9.9l6.364 6.364a.5.5 0 00.707 0L13.936 9.9a.5.5 0 00-.707-.707L8.5 13.922V.5a.5.5 0 00-1 0v13.422L1.207 9.193a.5.5 0 00-.707.707z" />
               </svg>
-              <span>{app.downloads.toLocaleString()}</span>
+              <span>{formatNumber(app.downloads)}</span>
             </div>
                 <span>⭐ {app.ratingAvg.toFixed(1)}</span>
               </div>
@@ -77,9 +86,24 @@ export default function AllApps() {
           ))}
         </div>
       ) : (
-        <div className="text-center text-gray-500 mt-12 text-lg font-semibold">
-          No App Found
-        </div>
+       <div className="flex flex-col items-center text-center px-4 gap-4 mt-5 sm:mt-3">
+  {/* Heading */}
+  <h2 className="text-2xl sm:text-xl md:text-3xl font-semibold text-[#627382]">
+    No App Found
+  </h2>
+
+  {/* Back Button */}
+  <button
+    onClick={() => navigate("/", { replace: true })}
+    className="mt-3 px-6 py-2 bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white font-semibold rounded-lg hover:opacity-90 transition text-sm sm:text-xs md:text-base"
+  >
+    Back to Home
+  </button>
+</div>
+
+
+
+
       )}
     </div>
   );

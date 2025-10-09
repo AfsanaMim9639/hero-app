@@ -6,6 +6,14 @@ import starIcon from "../assets/icon-ratings.png";
 import reviewIcon from "../assets/icon-review.png";
 import downloadIcon from "../assets/icon-downloads.png";
 
+// Number formatting function
+function formatNumber(num) {
+  if (num >= 1000000000) return (num / 1000000000).toFixed(1).replace(/\.0$/, "") + "B";
+  if (num >= 1000000) return (num / 1000000).toFixed(1).replace(/\.0$/, "") + "M";
+  if (num >= 1000) return (num / 1000).toFixed(1).replace(/\.0$/, "") + "K";
+  return num.toString();
+}
+
 export default function MyInstallation() {
   const [installedApps, setInstalledApps] = useState([]);
   const [sortOrder, setSortOrder] = useState(""); 
@@ -110,7 +118,7 @@ export default function MyInstallation() {
                   <div className="flex items-center gap-1">
                     <img src={downloadIcon} alt="downloads" className="w-5 h-5" />
                     <span className="text-gray-700 text-sm font-medium">
-                      {app.downloads.toLocaleString()}
+                      {formatNumber(app.downloads)}
                     </span>
                   </div>
 
@@ -124,7 +132,7 @@ export default function MyInstallation() {
 
                   {/* Size */}
                   <div className="flex items-center gap-1">
-                    <img src={reviewIcon} alt="size" className="w-5 h-5" />
+                    
                     <span className="text-gray-700 text-sm font-medium">
                       {app.size} MB
                     </span>

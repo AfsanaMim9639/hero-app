@@ -5,6 +5,7 @@ import { toast, Toaster } from "react-hot-toast";
 import starIcon from "../assets/icon-ratings.png";
 import reviewIcon from "../assets/icon-review.png";
 import downloadIcon from "../assets/icon-downloads.png";
+import appNotFound from "../assets/App-Error.png";
 
 import {
   ResponsiveContainer,
@@ -16,6 +17,15 @@ import {
   CartesianGrid,
   LabelList,
 } from "recharts";
+
+
+// Number formatting function
+function formatNumber(num) {
+  if (num >= 1000000000) return (num / 1000000000).toFixed(1).replace(/\.0$/, "") + "B";
+  if (num >= 1000000) return (num / 1000000).toFixed(1).replace(/\.0$/, "") + "M";
+  if (num >= 1000) return (num / 1000).toFixed(1).replace(/\.0$/, "") + "K";
+  return num.toString();
+}
 
 export default function AppDetails() {
   const { id } = useParams();
@@ -48,17 +58,26 @@ export default function AppDetails() {
   if (!app) {
     return (
       <div className="flex flex-col justify-center items-center h-screen text-center bg-gray-50 px-4 gap-6">
-        <h1 className="text-4xl font-bold text-red-500 mb-2">App Not Found 😢</h1>
-        <p className="text-gray-600 text-lg max-w-md">
-          Sorry, the app you are looking for does not exist or may have been removed.
-        </p>
-        <button
-          onClick={() => navigate("/", { replace: true })}
-          className="mt-4 px-6 py-2 bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white font-semibold rounded-lg hover:opacity-90 transition"
-        >
-          Back to Home
-        </button>
-      </div>
+  
+  
+  <img 
+    src={appNotFound} 
+    alt="App Not Found" 
+    className="w-42 h-42 mb-4" 
+  />
+
+  <h1 className="text-4xl font-bold text-red-500 mb-2">App Not Found 😢</h1>
+  <p className="text-gray-600 text-lg max-w-md">
+    Sorry, the app you are looking for does not exist or may have been removed.
+  </p>
+  <button
+    onClick={() => navigate("/", { replace: true })}
+    className="mt-4 px-6 py-2 bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white font-semibold rounded-lg hover:opacity-90 transition"
+  >
+    Back to Home
+  </button>
+</div>
+
     );
   }
 
@@ -97,7 +116,7 @@ export default function AppDetails() {
 
   {/* Number */}
   <h1 className="text-2xl sm:text-3xl font-bold text-black">
-    {app.downloads.toLocaleString()}
+    {formatNumber(app.downloads)}
   </h1>
 </div>
 
@@ -140,9 +159,8 @@ export default function AppDetails() {
         </div>
       </div>
 
-      {/* Horizontal Review Chart */}
 {/* Horizontal Review Chart */}
-<div className="mt-12 w-full overflow-x-auto">
+<div className="w-full overflow-x-auto border-t-2 border-b-2 border-[#62738280]">
   <h2 className="text-lg sm:text-xl md:text-2xl font-bold mb-4 text-[#001931]">
     App Review Chart
   </h2>
@@ -151,15 +169,15 @@ export default function AppDetails() {
       <BarChart
         data={reviewData}
         layout="vertical"
-        margin={{ top: 20, right: 20, left: 0, bottom: 20 }} // left 0 for mobile
-        barSize={12} // thinner bars for mobile
+        margin={{ top: 20, right: 60, left: 0, bottom: 20 }} 
+        barSize={15}
       >
         <CartesianGrid strokeDasharray="3 3" />
         <XAxis type="number" />
         <YAxis type="category" dataKey="rating" reversed={true} />
         <Tooltip />
         <Bar dataKey="count" fill="#632EE3">
-          <LabelList dataKey="count" position="right" />
+          <LabelList dataKey="count" position="right" offset={10} />
         </Bar>
       </BarChart>
     </ResponsiveContainer>
