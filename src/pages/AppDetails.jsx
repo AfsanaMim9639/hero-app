@@ -141,27 +141,32 @@ export default function AppDetails() {
       </div>
 
       {/* Horizontal Review Chart */}
-      <div className="mt-12 w-full overflow-x-auto">
-        <h2 className="text-xl sm:text-2xl font-bold mb-4 text-[#001931]">App Review Chart</h2>
-        <div className="min-w-[400px] sm:min-w-[500px] lg:min-w-full h-64 sm:h-80 lg:h-96">
-          <ResponsiveContainer width="100%" height="100%">
-            <BarChart
-              data={reviewData}
-              layout="vertical"
-              margin={{ top: 20, right: 20, left: 10, bottom: 20 }}
-              barSize={15}
-            >
-              <CartesianGrid strokeDasharray="3 3" />
-              <XAxis type="number" />
-              <YAxis type="category" dataKey="rating" reversed={true} />
-              <Tooltip />
-              <Bar dataKey="count" fill="#632EE3">
-                <LabelList dataKey="count" position="right" />
-              </Bar>
-            </BarChart>
-          </ResponsiveContainer>
-        </div>
-      </div>
+{/* Horizontal Review Chart */}
+<div className="mt-12 w-full overflow-x-auto">
+  <h2 className="text-lg sm:text-xl md:text-2xl font-bold mb-4 text-[#001931]">
+    App Review Chart
+  </h2>
+  <div className="w-[350px] sm:w-[500px] md:w-full h-64 sm:h-80 md:h-96 ml-0">
+    <ResponsiveContainer width="100%" height="100%">
+      <BarChart
+        data={reviewData}
+        layout="vertical"
+        margin={{ top: 20, right: 20, left: 0, bottom: 20 }} // left 0 for mobile
+        barSize={12} // thinner bars for mobile
+      >
+        <CartesianGrid strokeDasharray="3 3" />
+        <XAxis type="number" />
+        <YAxis type="category" dataKey="rating" reversed={true} />
+        <Tooltip />
+        <Bar dataKey="count" fill="#632EE3">
+          <LabelList dataKey="count" position="right" />
+        </Bar>
+      </BarChart>
+    </ResponsiveContainer>
+  </div>
+</div>
+
+
 
       {/* App Description */}
       <div>
