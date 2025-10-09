@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { FaSearch } from "react-icons/fa";
-import { useNavigate } from "react-router-dom"; // ✅ Import useNavigate
+import { useNavigate } from "react-router-dom"; 
 import appsData from "../data/appsData";
 
 export default function AllApps() {
   const [searchTerm, setSearchTerm] = useState("");
-  const navigate = useNavigate(); // ✅ Initialize navigate
+  const navigate = useNavigate(); 
 
   // Filter apps based on search term (case-insensitive)
   const filteredApps = appsData.filter((app) =>
@@ -51,7 +51,7 @@ export default function AllApps() {
             <div
               key={app.id}
               className="bg-white rounded-lg shadow p-4 cursor-pointer hover:shadow-lg transition"
-              onClick={() => navigate(`/apps/${app.id}`)} // ✅ Navigate to AppDetails page
+              onClick={() => navigate(`/apps/${app.id}`)}
             >
               <img
                 src={app.image}

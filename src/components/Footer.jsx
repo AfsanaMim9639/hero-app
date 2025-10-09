@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin, FaTwitter, FaFacebook } from "react-icons/fa";
 export default function Footer() {
   return (
     <footer className="bg-gray-900 text-gray-300 px-10 py-8">
-      {/* Grid container for 4 columns */}
+      
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
         
         {/* Column 1: About */}

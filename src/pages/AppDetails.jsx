@@ -89,34 +89,38 @@ export default function AppDetails() {
           {/* Metrics */}
           <div className="flex flex-wrap gap-6 mt-6 justify-start">
             <div className="flex flex-col items-center min-w-[90px]">
-              <span className="text-gray-700 font-semibold text-sm sm:text-base">Downloads</span>
-              <span className="flex items-center gap-1 text-lg font-semibold">
-                <span className="bg-gradient-to-r from-[#34A853] to-[#0F9D58] bg-clip-text text-transparent">
-                  {app.downloads.toLocaleString()}
-                </span>
-                <img src={downloadIcon} alt="downloads" className="w-5 h-5" />
-              </span>
-            </div>
+  {/* Download Icon */}
+  <img src={downloadIcon} alt="downloads" className="w-6 h-6 mb-1" />
 
-            <div className="flex flex-col items-center min-w-[90px]">
-              <span className="text-gray-700 font-semibold text-sm sm:text-base">Rating</span>
-              <span className="flex items-center gap-1 text-lg font-semibold">
-                <span className="bg-gradient-to-r from-[hsl(45,98%,44%)] to-[#F4B400] bg-clip-text text-transparent">
-                  {app.ratingAvg.toFixed(1)}
-                </span>
-                <img src={starIcon} alt="rating" className="w-5 h-5" />
-              </span>
-            </div>
+  {/* Label */}
+  <p className="text-gray-500 font-medium text-xs mb-1">Downloads</p>
 
-            <div className="flex flex-col items-center min-w-[90px]">
-              <span className="text-gray-700 font-semibold text-sm sm:text-base">Total Reviews</span>
-              <span className="flex items-center gap-1 text-lg font-semibold">
-                <span className="bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent">
-                  {app.reviews}
-                </span>
-                <img src={reviewIcon} alt="reviews" className="w-5 h-5" />
-              </span>
-            </div>
+  {/* Number */}
+  <h1 className="text-2xl sm:text-3xl font-bold text-black">
+    {app.downloads.toLocaleString()}
+  </h1>
+</div>
+
+
+
+            {/* Rating */}
+<div className="flex flex-col items-center min-w-[90px]">
+  <img src={starIcon} alt="rating" className="w-6 h-6 mb-1" />
+  <p className="text-gray-500 font-medium text-xs mb-1">Rating</p>
+  <h1 className="text-2xl sm:text-3xl font-bold text-black">
+    {app.ratingAvg.toFixed(1)}
+  </h1>
+</div>
+
+{/* Total Reviews */}
+<div className="flex flex-col items-center min-w-[90px]">
+  <img src={reviewIcon} alt="reviews" className="w-6 h-6 mb-1" />
+  <p className="text-gray-500 font-medium text-xs mb-1">Total Reviews</p>
+  <h1 className="text-2xl sm:text-3xl font-bold text-black">
+    {app.reviews}
+  </h1>
+</div>
+
           </div>
 
           {/* Install Button */}
@@ -144,7 +148,7 @@ export default function AppDetails() {
             <BarChart
               data={reviewData}
               layout="vertical"
-              margin={{ top: 20, right: 20, left: 50, bottom: 20 }}
+              margin={{ top: 20, right: 20, left: 10, bottom: 20 }}
               barSize={15}
             >
               <CartesianGrid strokeDasharray="3 3" />

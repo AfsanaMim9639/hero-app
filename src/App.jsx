@@ -7,19 +7,19 @@ import AllApps from "./pages/AllApps";
 import AppDetails from "./pages/AppDetails";
 import ErrorPage from "./pages/ErrorPage";
 import MyInstallation from "./pages/MyInstallation";
-import Loader from "./components/Loader"; // ✅ loader import
+import Loader from "./components/Loader"; 
 
 function Installation() {
   return <div className="p-6">Installation Page</div>;
 }
 
-// ✅ Loader integrated Layout
+// Loader integrated Layout
 function Layout() {
   const location = useLocation();
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    // show loader during route change
+  // show loader during route change
     setLoading(true);
     const timer = setTimeout(() => setLoading(false), 600);
     return () => clearTimeout(timer);

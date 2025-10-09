@@ -8,7 +8,7 @@ import downloadIcon from "../assets/icon-downloads.png";
 
 export default function MyInstallation() {
   const [installedApps, setInstalledApps] = useState([]);
-  const [sortOrder, setSortOrder] = useState(""); // New state for sorting
+  const [sortOrder, setSortOrder] = useState(""); 
 
   // Load installed apps from localStorage
   useEffect(() => {
