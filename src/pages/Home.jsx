@@ -34,7 +34,7 @@ export default function Home() {
 
   <p className="text-[#627382] text-sm sm:text-base max-w-2xl text-justify mt-3 mb-6 leading-relaxed">
     At <b>HERO.IO</b>, we craft innovative apps designed to make everyday life simpler, smarter, and more exciting.
-    <br />
+    
     Our goal is to turn your ideas into digital experiences that truly make an impact.
   </p>
 
