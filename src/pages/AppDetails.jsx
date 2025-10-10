@@ -187,10 +187,29 @@ export default function AppDetails() {
 
 
       {/* App Description */}
-      <div>
-        <h2 className="text-xl sm:text-2xl font-bold mb-4 text-[#001931]">App Description</h2>
-        <p className="text-gray-700 text-sm sm:text-base leading-relaxed">{app.description}</p>
-      </div>
+<div>
+  <h2 className="text-xl sm:text-2xl font-bold mb-4 text-[#001931]">
+    App Description
+  </h2>
+
+  {app.description
+    .split(". ") 
+    .reduce((acc, sentence, i) => {
+      const chunkIndex = Math.floor(i / 3); 
+      if (!acc[chunkIndex]) acc[chunkIndex] = sentence;
+      else acc[chunkIndex] += ". " + sentence;
+      return acc;
+    }, [])
+    .map((para, index) => (
+      <p
+        key={index}
+        className="text-gray-700 text-sm sm:text-base leading-relaxed mb-3"
+      >
+        {para}.
+      </p>
+    ))}
+</div>
+
     </div>
   );
 }
